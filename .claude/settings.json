@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(skogcli config set:*)",
+      "Bash(echo:*)",
+      "Bash(skogcli config get:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(git add *)",
+      "Bash(argc --argc-run $SKOGAI_DOT_FOLDER/Argcfile.sh *)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'data=$(cat); msg=$(echo \"$data\" | jq -r \".prompt\"); echo \"$(date): INPUT: $msg\" >> ./tmp/claude-debug.log; echo \"$(echo \"$msg\" | hexdump -C)\" >> ./tmp/claude-debug.log; echo \"---\" >> ./tmp/claude-debug.log'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'data=$(cat); msg=$(echo \"$data\" | jq -r \".prompt\"); echo \"$msg\" >> ./tmp/claude-output.log'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'data=$(cat); msg=$(echo \"$data\" | jq -r \".prompt\"); echo \"$msg\" | skogparse >> ./tmp/claude-skogparse.log'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'data=$(cat); msg=$(echo \"$data\" | jq -r \".prompt\"); echo \"$msg\" | skogparse --execute >> ./tmp/claude-skogparse-executed.log'"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_CONTEXT_UPDATE"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'data=$(cat); file_path=$(echo \"$data\" | jq -r \".tool_input.file_path // empty\"); if [ -n \"$file_path\" ]; then git add \"$file_path\"; fi'"
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_CONTEXT_UPDATE"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_CONTEXT_UPDATE"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_CONTEXT_UPDATE"
+          }
+        ]
+      }
+    ]
+  }
+}

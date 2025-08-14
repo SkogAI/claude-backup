@@ -1,0 +1,10 @@
+- [ ] implement context:todo
+- [ ] implement context:memory
+- [ ] implement the init script to setup this anywhere
+- [ ] make sure the concept of "for llms and not users" gets better explained
+- [x] take care of env vars
+- [ ] remove or populate empty context sections (todo, memory)
+- [ ] .llm/ is currently very underused
+- [ ] agent-git can actually get a real implementation
+- [ ] explain tmp feature
+- [ ] add `agent-git git add <file>`. it just makes sense and claude keeps reasoning himself to use it - obviously.

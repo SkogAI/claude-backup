@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "skogai-think": {
+      "type": "stdio",
+      "command": "mcp-think-tool",
+      "args": [],
+      "env": {}
+    },
+    "supabase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_11dd6d7297a0dd2d55f2868160a11b5388dca221"
+      }
+    },
+    "skogai-memory": {
+      "type": "http",
+      "url": "https://memory.skogai.se/mcp"
+    },
+    "context7": {
+      "type": "sse",
+      "url": "https://mcp.context7.com/sse"
+    }
+  }
+}

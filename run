@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+eval "$(skogcli config export-env --namespace claude,)"
+# "$CLAUDE_RUN" "$@"
+$SKOGAI_CONTEXT_RUN
+claude "$@"

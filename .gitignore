@@ -1,0 +1,16 @@
+tmp/context
+tmp/context-feature
+tmp/feature-diff
+tmp/prompt-replace-apply.log
+tmp/prompt-replacement-results.log
+*.diff
+.aider*
+tmp/claude-debug.log
+tmp/claude-output.log
+tmp/claude-skogparse-executed.log
+tmp/claude-skogparse.log
+context/example.md
+context/example.txt
+context/envs.md
+projects/supabase/.env
+tmp/release-diff

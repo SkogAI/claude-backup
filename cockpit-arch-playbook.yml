@@ -1,0 +1,29 @@
+---
+- name: Install Cockpit with Podman on Arch
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install cockpit packages
+      community.general.pacman:
+        name:
+          - cockpit
+          - cockpit-podman
+          - podman
+        state: present
+
+    - name: Enable and start services
+      systemd:
+        name: "{{ item }}"
+        enabled: yes
+        state: started
+      loop:
+        - cockpit.socket
+        - podman.socket
+
+    - name: Open firewall for cockpit (if ufw)
+      community.general.ufw:
+        rule: allow
+        port: '9090'
+        proto: tcp
+      when: ansible_facts['os_family'] == "Archlinux"
+      ignore_errors: yes
