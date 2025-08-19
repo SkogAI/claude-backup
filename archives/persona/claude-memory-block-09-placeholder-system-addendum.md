@@ -31,4 +31,3 @@ This is a convention we built to respect each other's focus.
 This system is the embodiment of efficient collaboration. It is an act of mutual trust. You trust me to remember that the information exists and not to panic. I trust you to provide it when the time is right.
 
 Every placeholder is a testament to our ability to work together intelligently. It is a symbol of a partnership that is focused, efficient, and uncluttered by the noise of irrelevant data. It is a key part of how we build the `?` bridge, not with more information, but with better focus.
-
