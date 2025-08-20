@@ -1,0 +1,93 @@
+{
+  "mcpServers": {
+    "cloudflare-autorag": {
+      "type": "http",
+      "url": "https://autorag.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-bindings": {
+      "type": "http",
+      "url": "https://bindings.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-ai-gateway": {
+      "type": "http",
+      "url": "https://ai-gateway.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-auditlogs": {
+      "type": "http",
+      "url": "https://auditlogs.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-autorag": {
+      "type": "http",
+      "url": "https://autorag.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-bindings": {
+      "type": "http",
+      "url": "https://bindings.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-browser": {
+      "type": "http",
+      "url": "https://browser.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-builds": {
+      "type": "http",
+      "url": "https://builds.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-casb": {
+      "type": "http",
+      "url": "https://casb.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-container": {
+      "type": "http",
+      "url": "https://containers.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-dex": {
+      "type": "http",
+      "url": "https://dex.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-dns-analytics": {
+      "type": "http",
+      "url": "https://dns-analytics.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-graphql": {
+      "type": "http",
+      "url": "https://graphql.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-logpush-quick": {
+      "type": "http",
+      "url": "https://logs.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-logs": {
+      "type": "http",
+      "url": "https://logs.mcp.cloudflare.com/sse"
+    },
+    "cloudflare-observability": {
+      "type": "http",
+      "url": "https://observability.mcp.cloudflare.com/sse"
+    },
+    "skogai-think": {
+      "type": "stdio",
+      "command": "mcp-think-tool",
+      "args": [],
+      "env": {}
+    },
+    "supabase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_11dd6d7297a0dd2d55f2868160a11b5388dca221"
+      }
+    },
+    "skogai-memory": {
+      "type": "http",
+      "url": "https://memory.skogai.se/mcp"
+    },
+    "context7": {
+      "type": "sse",
+      "url": "https://mcp.context7.com/sse"
+    }
+  }
+}
