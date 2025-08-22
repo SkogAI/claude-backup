@@ -293,7 +293,7 @@
   },
   {
     "name": "fs_write",
-    "description": "Write the full file contents to a file at the specified path. When changing a part of a file - consider using fs_patch instead.",
+    "description": "Write the full file contents to a file at the specified path.",
     "parameters": {
       "type": "object",
       "properties": {
