@@ -1,6 +1,6 @@
 ---
 state: new
-created: 2025-08-24
+created: 2025-08-24T00:00:00
 priority: medium
 tags: [integration, architecture, visualization]
 depends: [map-core-infrastructure, discover-agent-modules, map-ai-integration, explore-argc-ecosystem, document-data-persistence]
