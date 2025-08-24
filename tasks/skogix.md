@@ -1,6 +1,6 @@
 ---
-state: skogix
-created: 2025-08-24
+state: new
+created: 2025-08-24T00:00:00
 priority: low
 tags: [skogix, dump, todo]
 depends: []
@@ -24,14 +24,18 @@ roles_path = roles
 always = yes
 vault_password_file = ~/.ssh/ansible-vault-pass
 ---
+
 collections:
-  - name: ansible.posix
+
+- name: ansible.posix
     version: ">=1.5.0"
-  - name: community.general
+- name: community.general
     version: ">=11.0.0"
-  - name: kewlfft.aur
+- name: kewlfft.aur
     version: ">=0.11.0"
+
 ---
+
 # System Setup Flowchart
 
 ## Initial Bootstrap Flow (arch-base.yml)
@@ -143,5 +147,3 @@ packages
 ssh
 system
 tmux
-
-

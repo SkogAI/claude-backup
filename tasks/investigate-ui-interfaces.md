@@ -1,6 +1,6 @@
 ---
 state: new
-created: 2025-08-24
+created: 2025-08-24T00:00:00
 priority: low
 tags: [ui, interfaces, cli]
 depends: [map-core-infrastructure]
