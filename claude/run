@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-eval "$(skogcli config export-env --namespace claude,skogai)"
-# "$CLAUDE_RUN" "$@"
-$SKOGAI_CONTEXT_UPDATE
-# claude "$@" --add-dir /home/skogix/skogai
-claude "$@"
