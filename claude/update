@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-eval "$(skogcli config export-env --namespace claude,skogai)"
-rm -f ./tmp/*
-$SKOGAI_CONTEXT_UPDATE
