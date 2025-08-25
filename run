@@ -3,5 +3,5 @@ eval "$(skogcli config export-env --namespace claude,skogai)"
 # "$CLAUDE_RUN" "$@"
 $SKOGAI_CONTEXT_UPDATE
 # claude "$@" --add-dir /home/skogix/skogai
-claude-trace --run-with --resume
+claude-trace --include-all-requests --run-with --resume
 # claude "$@"
