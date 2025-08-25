@@ -9,20 +9,5 @@
       "Bash(argc*)"
     ],
     "deny": []
-  },
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit|MultiEdit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash -c 'data=$(cat); file_path=$(echo \"$data\" | jq -r \".tool_input.file_path // empty\"); if [ -n \"$file_path\" ]; then git add \"$file_path\"; fi'"
-          }
-        ]
-      },
-    ],
-    "Stop": [],
-    "SubagentStop": []
   }
 }
