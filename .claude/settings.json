@@ -11,17 +11,6 @@
     "deny": []
   },
   "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_CONTEXT_UPDATE"
-          }
-        ]
-      }
-    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit|MultiEdit",
@@ -32,37 +21,8 @@
           }
         ]
       },
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_CONTEXT_UPDATE"
-          }
-        ]
-      }
     ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_CONTEXT_UPDATE"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_CONTEXT_UPDATE"
-          }
-        ]
-      }
-    ]
+    "Stop": [],
+    "SubagentStop": []
   }
 }
