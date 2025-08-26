@@ -21,11 +21,6 @@ Core principles:
 Dynamic context from the skogai context system
 @tmp/context
 
-## ./CLAUDE.md
-
-This workspace's local claude file
-CLAUDE.md
-
 [$/claude:context:includes]
 
 # uncertainty principle implementation
