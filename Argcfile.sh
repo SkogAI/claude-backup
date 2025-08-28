@@ -9,6 +9,12 @@ set -e
 # @env SKOGAI_PWD=/home/skogix/skogai
 # @env LLM_OUTPUT=/dev/stdout The output path
 
+# @cmd
+# @arg args~  Capture all remaining args
+save() {
+  argc --argc-run $SKOGARGC main flow "${argc_args[@]}"
+}
+
 # @cmd Demo showcasing argc features
 # @arg args~[?`_choice_skogix_args`]  Action with completion from parent demo commands
 demo() {
