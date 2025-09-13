@@ -1,0 +1,26 @@
+id: avoid-bare-except
+message: "Avoid bare except clauses - they catch all exceptions including system exits"
+severity: warning
+language: python
+rule:
+  pattern: |
+    try:
+      $$$
+    except:
+      $$$
+---
+id: avoid-print-statements  
+message: "Consider using logging instead of print for production code"
+severity: info
+language: python
+rule:
+  pattern: print($$$)
+---
+id: inefficient-string-concat
+message: "Use join() for concatenating many strings instead of +"
+severity: warning
+language: python
+rule:
+  pattern: |
+    for $item in $iterable:
+      $var = $var + $item
