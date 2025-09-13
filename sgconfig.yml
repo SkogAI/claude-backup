@@ -1,0 +1,20 @@
+# ast-grep project configuration
+languageGlobs:
+  python:
+    - "**/*.py"
+  javascript:
+    - "**/*.js"
+    - "**/*.mjs"
+  typescript:
+    - "**/*.ts"
+    - "**/*.tsx"
+  bash:
+    - "**/*.sh"
+  yaml:
+    - "**/*.yml" 
+    - "**/*.yaml"
+
+ruleDirs:
+  - rules
+
+outputStyle: pretty

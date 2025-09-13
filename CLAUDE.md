@@ -21,21 +21,6 @@ Core principles:
 Dynamic context from the skogai context system
 @tmp/context
 
-## ./tmp/context-feature
-
-Dynamic context from the git-flow feature system of skogai context
-@tmp/context-feature
-
-## ./TASKS.md
-
-Descriptions of how the workspaces task list works
-@TASKS.md
-
-## ./CLAUDE.md
-
-This workspace's local claude file
-@CLAUDE.md
-
 [$/claude:context:includes]
 
 # uncertainty principle implementation

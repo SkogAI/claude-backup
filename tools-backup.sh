@@ -218,10 +218,9 @@ read_official_documents() {
   fi
 }
 
-# @cmd Wawa
+# @cmd
 wawa() {
-  echo "TNOUEHSNUOEHNTUSOEHSNTUOEHNU?" >$LLM_OUTPUT
-  echo "huhu"
+  echo "WOWO?"
 }
 
 # @cmd Demo showcasing argc features
