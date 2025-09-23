@@ -9,5 +9,18 @@
       "Bash(argc*)"
     ],
     "deny": []
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Task|Bash|Glob|Grep|ExitPlanMode|Read|Edit|MultiEdit|Write|NotebookEdit|WebFetch|WebSearch|BashOutput|KillShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$SKOGAI_CONTEXT_UPDATE"
+          }
+        ]
+      }
+    ]
   }
 }
