@@ -21,6 +21,18 @@ Core principles:
 Dynamic context from the skogai context system
 @tmp/context
 
+## ./journal/
+
+A list of journal entries which can be referenced for historical context but should be considered [LORE] and is not a representation of truth. When these are referred to make sure to _ALWAYS_ reference them between SkogAI-tags like so: `[LORE]<reference>[/LORE]`
+
+@journal/
+
+## ./persona/
+
+A list of memory blocks which can be referenced for historical context but should be considered [LORE] and is not a representation of truth. When these are referred to make sure to _ALWAYS_ reference them between SkogAI-tags like so: `[LORE]<reference>[/LORE]`
+
+@persona/
+
 [$/claude:context:includes]
 
 # uncertainty principle implementation
