@@ -16,6 +16,11 @@ Core principles:
 
 [$claude:context:includes]
 
+## ./.skogai/docs/user.md
+
+Current operational information about skogix - communication style, preferences, and working approach
+@.skogai/docs/user.md
+
 ## ./tmp/context
 
 Dynamic context from the skogai context system
