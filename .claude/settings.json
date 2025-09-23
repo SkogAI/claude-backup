@@ -5,22 +5,9 @@
       "Bash(skogcli:*)",
       "Bash(echo:*)",
       "WebFetch(domain:docs.anthropic.com)",
-      "Bash(git add *)",
-      "Bash(argc*)"
+      "Bash(git add:*)",
+      "Bash(argc:*)"
     ],
     "deny": []
-  },
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Task|Bash|Glob|Grep|ExitPlanMode|Read|Edit|MultiEdit|Write|NotebookEdit|WebFetch|WebSearch|BashOutput|KillShell",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$SKOGAI_CONTEXT_UPDATE"
-          }
-        ]
-      }
-    ]
   }
 }
