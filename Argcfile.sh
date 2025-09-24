@@ -3,7 +3,7 @@
 set -e
 
 # @describe A comprehensive argc demo showing best practices
-# @env SKOGAI_PWD=/home/skogix/skogai
+# @env SKOGAI_PWD=/home/skogix/claude/
 # @env LLM_OUTPUT=/dev/stdout The output path
 # @env SKOGAI_AGENT_NAME![claude|dot|amy|goose]
 # @meta version 1.0.0
@@ -12,9 +12,9 @@ set -e
 # @cmd Git flow operations
 flow() { :; }
 
-# @cmd tmp update
-update() {
-  date >./tmp/context
+# @cmd $SKOGAI_PWD/tools.sh wrapper
+tools() {
+  argc --argc-run $SKOGAI_PWD/tools.sh "$@"
 }
 
 # @cmd
