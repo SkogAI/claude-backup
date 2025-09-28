@@ -21,12 +21,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
         submodules: recursive
 
     - name: Update submodules
       run: |
-        git submodule update --init --recursive
         git submodule update --remote --merge
 
     - name: Check for changes
