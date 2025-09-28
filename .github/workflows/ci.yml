@@ -11,6 +11,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      CLAUDE_CODE_AUTH_TOKEN: ${{ secrets.CLAUDE_CODE_AUTH_TOKEN }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
     steps:
     - uses: actions/checkout@v4
       with:
