@@ -1,0 +1,74 @@
+name: Backup Claude Memory
+
+on:
+  push:
+    branches: [ master, main, develop ]
+    paths:
+      - 'journal/**'
+      - 'persona/**'
+      - 'logs/**'
+      - 'CLAUDE.md'
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Create backup timestamp
+      id: timestamp
+      run: echo "timestamp=$(date +'%Y%m%d_%H%M%S')" >> $GITHUB_OUTPUT
+
+    - name: Archive memories
+      run: |
+        mkdir -p backups
+
+        # Archive journal if exists
+        if [ -d "journal" ]; then
+          tar -czf "backups/journal_${{ steps.timestamp.outputs.timestamp }}.tar.gz" journal/
+          echo "✅ Journal archived"
+        fi
+
+        # Archive persona if exists
+        if [ -d "persona" ]; then
+          tar -czf "backups/persona_${{ steps.timestamp.outputs.timestamp }}.tar.gz" persona/
+          echo "✅ Persona archived"
+        fi
+
+        # Archive logs if exists
+        if [ -d "logs" ]; then
+          tar -czf "backups/logs_${{ steps.timestamp.outputs.timestamp }}.tar.gz" logs/
+          echo "✅ Logs archived"
+        fi
+
+    - name: Clean old backups
+      run: |
+        # Keep only last 10 backups of each type
+        for type in journal persona logs; do
+          ls -t backups/${type}_*.tar.gz 2>/dev/null | tail -n +11 | xargs -r rm
+        done
+
+    - name: Commit backups
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add backups/
+        git diff --staged --quiet || git commit -m "backup: Archive memories at ${{ steps.timestamp.outputs.timestamp }}
+
+        Automated backup of Claude's knowledge base
+
+        Generated with [Claude Code](https://claude.ai/code)
+        via [Happy](https://happy.engineering)
+
+        Co-Authored-By: Claude <noreply@anthropic.com>
+        Co-Authored-By: Happy <yesreply@happy.engineering>"
+        git push || echo "No changes to push"

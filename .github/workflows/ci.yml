@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, main, develop ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Check file structure
+      run: |
+        echo "Repository structure:"
+        ls -la
+
+    - name: Verify CLAUDE.md exists
+      run: |
+        if [ -f "CLAUDE.md" ]; then
+          echo "✅ CLAUDE.md found"
+        else
+          echo "❌ CLAUDE.md not found"
+          exit 1
+        fi
+
+    - name: Check for journal entries
+      run: |
+        if [ -d "journal" ]; then
+          echo "Journal entries:"
+          ls -la journal/
+        else
+          echo "No journal directory found"
+        fi
+
+    - name: Check for persona memories
+      run: |
+        if [ -d "persona" ]; then
+          echo "Persona memories:"
+          ls -la persona/
+        else
+          echo "No persona directory found"
+        fi
