@@ -8,6 +8,7 @@
     "what do you think a \"workflow\" or \"actions\" are? ultrathink about this",
     "you have to explain and talk to me so i can understand you. i do not know what submodule thing you are talking about.\n\nand yes that is correct, this is yaml files. now next question i have: what do you think you are doing when you send it (i guess thats what you do?) to a api instead of github? think about this again",
     "i asked you a question - what have i missed about your api-calls that lets know something i dont?",
-    "are you refering to the \"gh\" command when you say api in this case? a bit weird but sure - then you are actually doing what i have been telling you over and over! so why are you acting all weird and dont just `gh workflow list` and look yourself?"
+    "are you refering to the \"gh\" command when you say api in this case? a bit weird but sure - then you are actually doing what i have been telling you over and over! so why are you acting all weird and dont just `gh workflow list` and look yourself?",
+    "all good?"
   ]
 }

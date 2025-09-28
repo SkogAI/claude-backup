@@ -1724,5 +1724,29 @@
       "command": "git add -A && git status",
       "description": "Stage workflow changes"
     }
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git checkout master && git pull origin master",
+      "description": "Switch to master and pull latest"
+    }
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git stash && git checkout master && git pull origin master",
+      "description": "Stash local changes and switch to master"
+    }
   }
 ]
