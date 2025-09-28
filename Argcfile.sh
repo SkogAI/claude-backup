@@ -3,55 +3,22 @@
 set -e
 
 # @describe A comprehensive argc demo showing best practices
+# @env SKOGAI_PWD=/home/skogix/claude/
+# @env LLM_OUTPUT=/dev/stdout The output path
+# @env SKOGAI_AGENT_NAME![claude|dot|amy|goose]
 # @meta version 1.0.0
 # @meta dotenv .env
 # @meta require-tools git,curl
-# @env SKOGAI_PWD=/home/skogix/skogai
-# @env LLM_OUTPUT=/dev/stdout The output path
+# @cmd Git flow operations
+flow() { :; }
 
-# @cmd
-# @arg args~  Capture all remaining args
-save() {
-  argc --argc-run $SKOGARGC main flow "${argc_args[@]}"
-}
-
-# @cmd Demo showcasing argc features
-# @arg args~[?`_choice_skogix_args`]  Action with completion from parent demo commands
-demo() {
-  # Forward to parent Argcfile
-  argc --argc-run ../Argcfile.sh demo "${argc_args[@]}"
-  echo "argc_pwd: $ARGC_PWD"
-  echo "pwd: $PWD"
-  echo "skogai_pwd: $SKOGAI_PWD"
-}
-
-# @cmd Git-flow wrapper
-flow() {
-  git flow "${argc_args[@]}"
-}
-
-# @cmd Initialize git-flow
-# @flag --showcommands Show git commands while executing
-# @flag -d --defaults Use default branch naming conventions
-# @flag -f --force Force setting of gitflow branches
-flow::init() {
-  git flow init $argc_showcommands $argc_defaults $argc_force
+# @cmd $SKOGAI_PWD/tools.sh wrapper
+tools() {
+  argc --argc-run $SKOGAI_PWD/tools.sh "$@"
 }
 
 # @cmd
-flow::feature() {
-  :
-}
-
-# @cmd
-flow::release() {
-  :
-}
-
-# @cmd
-flow::hotfix() {
-  :
-}
+flow::feature() { :; }
 
 # @cmd Start new feature branch
 # @flag -F --fetch Fetch from origin before operation
@@ -68,9 +35,8 @@ flow::feature::start() {
 # @flag -k --keep Keep branch after finish
 # @flag -S --squash Squash feature during merge
 # @flag --no-ff Never fast-forward during merge
-# @arg name! Feature branch name
 flow::feature::finish() {
-  git flow feature finish $argc_fetch $argc_rebase $argc_push $argc_keep $argc_squash $argc_no_ff $argc_name
+  git flow feature finish $argc_fetch $argc_rebase $argc_push $argc_keep $argc_squash $argc_no_ff
 }
 
 # @cmd Publish feature to origin
@@ -91,6 +57,9 @@ flow::feature::list() {
 flow::feature::delete() {
   git flow feature delete $argc_force $argc_remote $argc_name
 }
+
+# @cmd
+flow::release() { :; }
 
 # @cmd Start new release branch
 # @flag -F --fetch Fetch from origin before operation
@@ -131,6 +100,9 @@ flow::release::list() {
 flow::release::delete() {
   git flow release delete $argc_force $argc_remote $argc_version
 }
+
+# @cmd
+flow::hotfix() { :; }
 
 # @cmd Start new hotfix branch
 # @flag -F --fetch Fetch from origin before operation
@@ -224,33 +196,6 @@ flow::config() {
 # @cmd Show log deviating from base branch
 flow::log() {
   git flow log
-}
-
-# @cmd Find out more information about the current directory
-# @option --cd <path> Change directory before calling librarian
-current_dir() {
-  skogparse '[@librarian:"Please tell me more about the current pwd"]'
-}
-
-# @cmd
-wawa() {
-  echo "WAWA" >$LLM_OUTPUT
-}
-
-# @cmd Git-flow wrapper
-# @arg args~[?`_choice_flow_args`]  Git-flow commands with completion
-flow2() {
-  argc --argc-run ./git-flow.sh "${argc_args[@]}"
-}
-
-# @cmd Hello world example
-# @arg name  Optional name to greet
-hello() {
-  if [[ -n "$argc_name" ]]; then
-    echo "Hello, $argc_name!"
-  else
-    echo "Hello, World!"
-  fi
 }
 
 # Helper function for completion

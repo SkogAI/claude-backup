@@ -5,8 +5,8 @@
       "Bash(skogcli:*)",
       "Bash(echo:*)",
       "WebFetch(domain:docs.anthropic.com)",
-      "Bash(git add *)",
-      "Bash(argc*)"
+      "Bash(git add:*)",
+      "Bash(argc:*)"
     ],
     "deny": []
   },
