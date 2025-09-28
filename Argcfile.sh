@@ -12,6 +12,9 @@ set -e
 # @cmd Git flow operations
 flow() { :; }
 
+# @cmd Git flow operations
+update() { :; }
+
 # @cmd $SKOGAI_PWD/tools.sh wrapper
 tools() {
   argc --argc-run $SKOGAI_PWD/tools.sh "$@"

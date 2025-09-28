@@ -82,5 +82,33 @@
     "cwd": "/home/skogix/claude",
     "hook_event_name": "SessionStart",
     "source": "resume"
+  },
+  {
+    "session_id": "d2cbf15f-2d9f-40a9-b554-d731362731f6",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/d2cbf15f-2d9f-40a9-b554-d731362731f6.jsonl",
+    "cwd": "/home/skogix/claude",
+    "hook_event_name": "SessionStart",
+    "source": "resume"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "hook_event_name": "SessionStart",
+    "source": "resume"
+  },
+  {
+    "session_id": "53c304c5-ff45-46be-aa1b-7d3c9d8e3808",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/53c304c5-ff45-46be-aa1b-7d3c9d8e3808.jsonl",
+    "cwd": "/home/skogix/claude",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "53c304c5-ff45-46be-aa1b-7d3c9d8e3808",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/53c304c5-ff45-46be-aa1b-7d3c9d8e3808.jsonl",
+    "cwd": "/home/skogix/claude",
+    "hook_event_name": "SessionStart",
+    "source": "resume"
   }
 ]

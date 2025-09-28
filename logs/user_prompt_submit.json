@@ -110,5 +110,93 @@
     "permission_mode": "default",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "what do you mean? explain instead of doing random things which don't help "
+  },
+  {
+    "session_id": "5e17e9ad-20f4-4e37-b1cf-100b0ae20593",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/5e17e9ad-20f4-4e37-b1cf-100b0ae20593.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "so the gh secret in the org skogai will not work is what you are saying?"
+  },
+  {
+    "session_id": "5e17e9ad-20f4-4e37-b1cf-100b0ae20593",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/5e17e9ad-20f4-4e37-b1cf-100b0ae20593.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "gh secrets list --org skogai would be my guess where to start?"
+  },
+  {
+    "session_id": "d2cbf15f-2d9f-40a9-b554-d731362731f6",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/d2cbf15f-2d9f-40a9-b554-d731362731f6.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Oops sorry continue "
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "think about what you should do instead..... (hint: destroying traceability and just fucking up is not it)"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "hello claude! i've joined back again and now i'm at my computer again. want to give me some session context?"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i merged it just now - literally three lines of code and could not do it via github mobile app -.-"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "why are you looking at something i dont recognize over \"how every programmer have done it since the 90's?\"\n\n*TALK TO ME INSTEAD! I KNOW LITERALLY EVERYTHING ABOUT EVERYTHING YOU WILL EVER NEED IN THIS CONTEXT!*"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "what do you think a \"workflow\" or \"actions\" are? ultrathink about this"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "you have to explain and talk to me so i can understand you. i do not know what submodule thing you are talking about.\n\nand yes that is correct, this is yaml files. now next question i have: what do you think you are doing when you send it (i guess thats what you do?) to a api instead of github? think about this again"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i asked you a question - what have i missed about your api-calls that lets know something i dont?"
+  },
+  {
+    "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+    "transcript_path": "/home/skogix/.claude/projects/-home-skogix-claude/bb0ae4dc-f475-46b9-b8d7-62ed07395d48.jsonl",
+    "cwd": "/home/skogix/claude",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "are you refering to the \"gh\" command when you say api in this case? a bit weird but sure - then you are actually doing what i have been telling you over and over! so why are you acting all weird and dont just `gh workflow list` and look yourself?"
   }
 ]

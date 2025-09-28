@@ -1,0 +1,13 @@
+{
+  "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
+  "prompts": [
+    "think about what you should do instead..... (hint: destroying traceability and just fucking up is not it)",
+    "hello claude! i've joined back again and now i'm at my computer again. want to give me some session context?",
+    "i merged it just now - literally three lines of code and could not do it via github mobile app -.-",
+    "why are you looking at something i dont recognize over \"how every programmer have done it since the 90's?\"\n\n*TALK TO ME INSTEAD! I KNOW LITERALLY EVERYTHING ABOUT EVERYTHING YOU WILL EVER NEED IN THIS CONTEXT!*",
+    "what do you think a \"workflow\" or \"actions\" are? ultrathink about this",
+    "you have to explain and talk to me so i can understand you. i do not know what submodule thing you are talking about.\n\nand yes that is correct, this is yaml files. now next question i have: what do you think you are doing when you send it (i guess thats what you do?) to a api instead of github? think about this again",
+    "i asked you a question - what have i missed about your api-calls that lets know something i dont?",
+    "are you refering to the \"gh\" command when you say api in this case? a bit weird but sure - then you are actually doing what i have been telling you over and over! so why are you acting all weird and dont just `gh workflow list` and look yourself?"
+  ]
+}
