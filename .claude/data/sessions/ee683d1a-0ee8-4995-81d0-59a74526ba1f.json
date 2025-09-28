@@ -1,0 +1,7 @@
+{
+  "session_id": "ee683d1a-0ee8-4995-81d0-59a74526ba1f",
+  "prompts": [
+    "hello claude! please look over all the .github actions / agent Workflow we have and make sure they all work. try against the gh command to make sure ",
+    "it mayve exists, but it needs to work as well..... check git auth and claude code auth "
+  ]
+}
