@@ -17,3 +17,4 @@ tmp/release-diff
 tmp/LLM_OUTPUT
 .claude-trace
 ignored
+logs
