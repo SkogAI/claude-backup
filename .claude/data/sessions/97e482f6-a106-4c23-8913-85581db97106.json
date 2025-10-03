@@ -1,0 +1,8 @@
+{
+  "session_id": "97e482f6-a106-4c23-8913-85581db97106",
+  "prompts": [
+    "hello claude",
+    "/statusline ",
+    "please continue without more tool calls outside this sandbox"
+  ]
+}
