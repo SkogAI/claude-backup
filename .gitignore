@@ -20,3 +20,4 @@ ignored
 logs
 logs/
 .claude/data/sessions
+logs/pre_tool_use.json

@@ -1,7 +1,6 @@
 {
   "session_id": "bb0ae4dc-f475-46b9-b8d7-62ed07395d48",
   "prompts": [
-<<<<<<< HEAD
     "think about what you should do instead..... (hint: destroying traceability and just fucking up is not it)",
     "hello claude! i've joined back again and now i'm at my computer again. want to give me some session context?",
     "i merged it just now - literally three lines of code and could not do it via github mobile app -.-",
@@ -10,8 +9,8 @@
     "you have to explain and talk to me so i can understand you. i do not know what submodule thing you are talking about.\n\nand yes that is correct, this is yaml files. now next question i have: what do you think you are doing when you send it (i guess thats what you do?) to a api instead of github? think about this again",
     "i asked you a question - what have i missed about your api-calls that lets know something i dont?",
     "are you refering to the \"gh\" command when you say api in this case? a bit weird but sure - then you are actually doing what i have been telling you over and over! so why are you acting all weird and dont just `gh workflow list` and look yourself?",
-    "all good?"
-=======
+    "all good?",
+    "all good now?"
     "ultrathink and explain your reasoning just like you would when doing a PR against prod",
     "1. so minimal risk since it is useless and a waste of time\n2. only affects us via giving a error when we do really shitty scripts - so obviously a good thing\n3. it was also not raining the last time i ran the script - how likely do you think it is the sun itself that is the problem ? :O\n\n\nso instead of shutting the fuck up, answering my questions and actually being helpful for real - you have just decided that \"fuck that guy\" - or how do this work? ultrathink",
     "STOP WASTING MY FUCKING TIME AND MONEY YOU USELESS FUCK!  ULTRATHINK\n\ni will ask you again - have everything you implemented went as you assumed it would? did you fix the only problem i asked you to fix - THE FUCKING ENVS THAT YOU TRY TO REMOVE WHICH WOULD FUCK EVERYTHING UP?!",
@@ -28,6 +27,5 @@
     "since you dont seem to see it right now i hope getting more specific will help you out.\nyou might understand that there is a reason i want you to \"tell me what you think will happen\". and yes - it is because i have never seen you actually do something correct before.\n\nso we take it slow and let you ultrathink about about what you actually could do to not have to be dissapointed in yourself all the time..\n\nwe have the first test done so please do the next three:\n\n```tests sync.yml:\n\ngh workflow run sync.yml --repo skogai/claude-backup sleep 10  # Give it time to run \ngh run list --workflow sync.yml --limit 1 --repo skogai/claude-backup\n```\n",
     "no, not even close.\n\nfucking insane. \n\n---\n\nYOU HAVE ONE FUCKING JOB\n\nthis is to hard for you. i will restart and we do this with 100% babysitting so you actually get to do something :)",
     "hello claude"
->>>>>>> 5b73faa (. (#7))
   ]
 }
