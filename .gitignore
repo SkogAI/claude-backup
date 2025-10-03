@@ -17,3 +17,7 @@ tmp/release-diff
 tmp/LLM_OUTPUT
 .claude-trace
 ignored
+logs
+logs/
+.claude/data/sessions
+logs/pre_tool_use.json

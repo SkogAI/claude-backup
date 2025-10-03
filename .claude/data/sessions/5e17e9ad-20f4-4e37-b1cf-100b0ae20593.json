@@ -1,6 +1,8 @@
 {
   "session_id": "5e17e9ad-20f4-4e37-b1cf-100b0ae20593",
   "prompts": [
-    "what do you mean? explain instead of doing random things which don't help "
+    "what do you mean? explain instead of doing random things which don't help ",
+    "so the gh secret in the org skogai will not work is what you are saying?",
+    "gh secrets list --org skogai would be my guess where to start?"
   ]
 }
